@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+	    <!-- Page title -->
+	    <title>Products</title>
+	    <!--Viewport -->
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+	    <!--Style sheet and Bootstrap files-->
+	    <!-- Bootstrap -->
+    	<link href="./assets/css/bootstrap.min.css" rel="stylesheet">
+	    <link href="./assets/css/style.css" rel="stylesheet">
+	    <link rel="stylesheet" href="./assets/css/bootstrap-theme.min.css">
+	    
+	</head>
+	<body>
+		<nav class="navbar navbar-light navbar-fixed-top">
+			<div class="container-fluid">
+				<!-- Brand and toggle get grouped for mobile display -->
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="#" id="all_products">Product catalog</a>
+				</div>
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="#" id="add_product">Add a product</a></li>
+						<li class="select-container">
+							<select id="category_select" name="category_select" class="form-control">
+								<option value="all">All products</option>
+							</select>
+						</li>
+					</ul>
+					<form class="navbar-form ">
+			        	<div class="form-group">
+			          		<input type="text" class="form-control search-input" placeholder="Search" id="search">
+			        	</div>
+			      	</form>
+				</div><!-- /.navbar-collapse -->
+			</div><!-- /.container-fluid -->
+		</nav><!--nav end-->
+
+		<div class="container">
+			<div class="container-fluid">
+				<div class="content" id="content"></div>
+			</div>
+
+			<!-- Add kind modal -->
+			<!-- This is hidden by default, only shown when needed -->
+			<div class="modal fade" id="addKindModal" tabindex="-1" role="dialog" aria-labelledby="addKindModal" aria-hidden="true">
+		  		<div class="modal-dialog" role="document">
+				    <div class="modal-content">
+						<div class="modal-header">
+					        <h3 class="modal-title inline" id="exampleModalLabel">Add your desired kind</h5>
+					        <button type="button" class="close inline" data-dismiss="modal" aria-label="Close">
+			        			<span aria-hidden="true">&times;</span>
+					        </button>
+				      	</div>
+				      	<div class="modal-body">
+				        	<form id="add_kind_form" method="post">
+			                	<div class="form-group no-margin">
+						        	<div class="input-item">
+				                    	<label for="kind">Product kind:</label>
+				                    	<input type ="text" maxlength="100" class="form-control custom-input" id="kind" name="kind" placeholder="Product kind" required>
+				                    	<p id="kind_error"></p>
+			                    	</div>
+			                    	<div class="modal-footer">
+				                    	<div class="right-btns">
+				                    		<button type="submit" class="btn custom-btn submit-btn" id="add_kind">Add kind</button>
+					        				<button type="button" class="btn custom-btn cancel-btn" data-dismiss="modal">Close</button>
+				                    	</div>
+				                    </div>
+		                    	</div>
+	                    	</form>
+				      	</div>
+				    </div>
+			  	</div>
+			</div>
+		</div>
+
+		 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	    <!-- Include all compiled plugins (below), or include individual files as needed -->
+	    <script src="./assets/js/bootstrap.min.js"></script>
+	    <script src="./assets/js/lodash.min.js"></script>
+	    <script src="./assets/js/app.js"></script>
+	</body>
+</html>
