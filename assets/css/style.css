@@ -96,6 +96,12 @@ h3 {
     border-top: none;
 }
 
+.error-msg {
+    color: #f00;
+    font-size: 12px;
+    margin: 5px;
+}
+
 .content {
     margin: 120px auto;
 }

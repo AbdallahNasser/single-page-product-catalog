@@ -168,7 +168,7 @@ $(document).ready(function () {
 			$('#add_kind_form').submit(function(event) {
 				event.preventDefault();
 				console.log('CLICKEDDDD');
-				var newKind = $('#kind').val();
+				var newKind = $('#kind').val().toLowerCase();
 				for (var element in products) {
 					if (element == newKind) {
 						var kindExist = true;
@@ -177,7 +177,7 @@ $(document).ready(function () {
 					}
 				}
 				if (kindExist) {
-					$('#kind_error').html('Stop doing this');
+					$('#kind_error').html('This kind already exists, please try another one!');
 				} else {
 					products[newKind] = [];
 					udateList(newKind);
