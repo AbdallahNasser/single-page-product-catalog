@@ -7,9 +7,9 @@ Single page product catalog is an application that provides a list of product ki
 Any new web browser
 
 # Tools used
-1. jQuery[https://jquery.com]
-2. Lodash[https://lodash.com]
-3. Bootstrap[https://getbootstrap.com]
+1. [jQuery](https://jquery.com)
+2. [Lodash](https://lodash.com)
+3. [Bootstrap](https://getbootstrap.com)
 
 # How to run
 Open index.html
